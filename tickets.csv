@@ -1,0 +1,1807 @@
+Issue Key,Summary,Description
+IPN-1,Unable to login after password reset attempt (Key: IPN-1),"User reports they cannot access the system after password reset.
+
+--- Unique Key Data ---
+JIRA Key: IPN-1
+Summary: Unable to login after password reset attempt"
+IPN-2,User cannot login due to session timeout issue on multiple browsers (Key: IPN-2),"System immediately logs out the user after login.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-2
+Summary: User cannot login due to session timeout issue on multiple browsers"
+IPN-3,UI alignment issue with login button on homepage for small screens (Key: IPN-3),"Login button overlaps with other elements on mobile view.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-3
+Summary: UI alignment issue with login button on homepage for small screens"
+IPN-4,Password reset email not received by users across regions (Key: IPN-4),Email delivery seems broken for password reset feature.
+IPN-5,Server returns error 500 when user tries login after inactivity (Key: IPN-5),"Server shows 500 error under specific login conditions.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+Business impact: This issue affects revenue as users are unable to complete transactions. Several complaints have already been raised by enterprise customers, putting the client relationship at risk.
+
+Technical details: Log analysis indicates possible race conditions or database deadlocks, which might explain why the system behaves differently under varying load conditions. Developers suspect unoptimized queries are at fault."
+IPN-6,Dashboard loads extremely slowly after login on production (Key: IPN-6),"Dashboard taking too long to load data.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-6
+Summary: Dashboard loads extremely slowly after login on production"
+IPN-7,Profile update fails silently without any error message (Key: IPN-7),"User profile changes are not saved after update attempt.
+
+Business impact: This issue affects revenue as users are unable to complete transactions. Several complaints have already been raised by enterprise customers, putting the client relationship at risk.
+
+Additional observations: Users have reported inconsistent behavior where the error sometimes resolves on its own after multiple retries. However, this is not reliable and has caused significant frustration among end users.
+
+Temporary workaround: Clearing the browser cache or using a different browser sometimes helps, but this is not a sustainable solution and cannot be advised officially to end users."
+IPN-8,New user signup fails with validation errors not displayed (Key: IPN-8),"Signup blocked due to frontend validation errors.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-8
+Summary: New user signup fails with validation errors not displayed"
+IPN-9,Session timeout happens too quickly leading to user frustration (Key: IPN-9),"User sessions end within a minute of login.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-9
+Summary: Session timeout happens too quickly leading to user frustration"
+IPN-10,Mobile app crashes on opening the settings page consistently (Key: IPN-10),"App closes unexpectedly when navigating to settings.
+
+--- Unique Key Data ---
+JIRA Key: IPN-10
+Summary: Mobile app crashes on opening the settings page consistently"
+IPN-11,Search functionality returns empty results even for valid queries (Key: IPN-11),"Search box not returning any results despite valid input.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-11
+Summary: Search functionality returns empty results even for valid queries"
+IPN-12,Push notifications not received on Android devices after update (Key: IPN-12),"Notifications stopped working after mobile app update.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-12
+Summary: Push notifications not received on Android devices after update"
+IPN-13,Dark mode rendering broken on analytics and reports screen (Key: IPN-13),"Dark mode UI broken for graphs and tables.
+
+--- Unique Key Data ---
+JIRA Key: IPN-13
+Summary: Dark mode rendering broken on analytics and reports screen"
+IPN-14,Confirmation email not being sent after user registration (Key: IPN-14),"No confirmation email is sent post signup process.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-14
+Summary: Confirmation email not being sent after user registration"
+IPN-15,Permissions error allows non-admins to access restricted panel (Key: IPN-15),"Admin panel is accessible to non-admin users.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-15
+Summary: Permissions error allows non-admins to access restricted panel"
+IPN-16,User data not syncing across devices after background refresh (Key: IPN-16),"Data is not syncing across user devices as expected.
+
+--- Unique Key Data ---
+JIRA Key: IPN-16
+Summary: User data not syncing across devices after background refresh"
+IPN-17,Profile picture upload error intermittently failing (Key: IPN-17),"Profile picture upload frequently fails.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-17
+Summary: Profile picture upload error intermittently failing"
+IPN-18,Report export to PDF generates corrupted files (Key: IPN-18),"Reports exported to PDF cannot be opened.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-18
+Summary: Report export to PDF generates corrupted files"
+IPN-19,Payment gateway fails when user retries transaction twice (Key: IPN-19),"Payment gateway throws error on repeated attempts.
+
+--- Unique Key Data ---
+JIRA Key: IPN-19
+Summary: Payment gateway fails when user retries transaction twice"
+IPN-20,Shopping cart items disappear after page refresh or reload (Key: IPN-20),"Items in cart vanish on refreshing the page.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+Business impact: This issue affects revenue as users are unable to complete transactions. Several complaints have already been raised by enterprise customers, putting the client relationship at risk.
+
+Additional observations: Users have reported inconsistent behavior where the error sometimes resolves on its own after multiple retries. However, this is not reliable and has caused significant frustration among end users.
+
+Temporary workaround: Clearing the browser cache or using a different browser sometimes helps, but this is not a sustainable solution and cannot be advised officially to end users.
+
+Technical details: Log analysis indicates possible race conditions or database deadlocks, which might explain why the system behaves differently under varying load conditions. Developers suspect unoptimized queries are at fault."
+IPN-21,Unable to login after password reset attempt (Key: IPN-21),"User reports they cannot access the system after password reset.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-21
+Summary: Unable to login after password reset attempt"
+IPN-22,User cannot login due to session timeout issue on multiple browsers (Key: IPN-22),"System immediately logs out the user after login.
+
+--- Unique Key Data ---
+JIRA Key: IPN-22
+Summary: User cannot login due to session timeout issue on multiple browsers"
+IPN-23,UI alignment issue with login button on homepage for small screens (Key: IPN-23),"Login button overlaps with other elements on mobile view.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-23
+Summary: UI alignment issue with login button on homepage for small screens"
+IPN-24,Password reset email not received by users across regions (Key: IPN-24),"Email delivery seems broken for password reset feature.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-24
+Summary: Password reset email not received by users across regions"
+IPN-25,Server returns error 500 when user tries login after inactivity (Key: IPN-25),"Server shows 500 error under specific login conditions.
+
+--- Unique Key Data ---
+JIRA Key: IPN-25
+Summary: Server returns error 500 when user tries login after inactivity"
+IPN-26,Dashboard loads extremely slowly after login on production (Key: IPN-26),"Dashboard taking too long to load data.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-26
+Summary: Dashboard loads extremely slowly after login on production"
+IPN-27,Profile update fails silently without any error message (Key: IPN-27),"User profile changes are not saved after update attempt.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-27
+Summary: Profile update fails silently without any error message"
+IPN-28,New user signup fails with validation errors not displayed (Key: IPN-28),"Signup blocked due to frontend validation errors.
+
+Technical details: Log analysis indicates possible race conditions or database deadlocks, which might explain why the system behaves differently under varying load conditions. Developers suspect unoptimized queries are at fault.
+
+Business impact: This issue affects revenue as users are unable to complete transactions. Several complaints have already been raised by enterprise customers, putting the client relationship at risk.
+
+Additional observations: Users have reported inconsistent behavior where the error sometimes resolves on its own after multiple retries. However, this is not reliable and has caused significant frustration among end users."
+IPN-29,Session timeout happens too quickly leading to user frustration (Key: IPN-29),"User sessions end within a minute of login.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-29
+Summary: Session timeout happens too quickly leading to user frustration"
+IPN-30,Mobile app crashes on opening the settings page consistently (Key: IPN-30),"App closes unexpectedly when navigating to settings.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-30
+Summary: Mobile app crashes on opening the settings page consistently"
+IPN-31,Search functionality returns empty results even for valid queries (Key: IPN-31),"Search box not returning any results despite valid input.
+
+--- Unique Key Data ---
+JIRA Key: IPN-31
+Summary: Search functionality returns empty results even for valid queries"
+IPN-32,Push notifications not received on Android devices after update (Key: IPN-32),"Notifications stopped working after mobile app update.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+Temporary workaround: Clearing the browser cache or using a different browser sometimes helps, but this is not a sustainable solution and cannot be advised officially to end users.
+
+Business impact: This issue affects revenue as users are unable to complete transactions. Several complaints have already been raised by enterprise customers, putting the client relationship at risk."
+IPN-33,Dark mode rendering broken on analytics and reports screen (Key: IPN-33),"Dark mode UI broken for graphs and tables.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-33
+Summary: Dark mode rendering broken on analytics and reports screen"
+IPN-34,Confirmation email not being sent after user registration (Key: IPN-34),"No confirmation email is sent post signup process.
+
+Temporary workaround: Clearing the browser cache or using a different browser sometimes helps, but this is not a sustainable solution and cannot be advised officially to end users.
+
+Additional observations: Users have reported inconsistent behavior where the error sometimes resolves on its own after multiple retries. However, this is not reliable and has caused significant frustration among end users.
+
+Business impact: This issue affects revenue as users are unable to complete transactions. Several complaints have already been raised by enterprise customers, putting the client relationship at risk.
+
+Technical details: Log analysis indicates possible race conditions or database deadlocks, which might explain why the system behaves differently under varying load conditions. Developers suspect unoptimized queries are at fault."
+IPN-35,Permissions error allows non-admins to access restricted panel (Key: IPN-35),"Admin panel is accessible to non-admin users.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-35
+Summary: Permissions error allows non-admins to access restricted panel"
+IPN-36,User data not syncing across devices after background refresh (Key: IPN-36),"Data is not syncing across user devices as expected.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-36
+Summary: User data not syncing across devices after background refresh"
+IPN-37,Profile picture upload error intermittently failing (Key: IPN-37),Profile picture upload frequently fails.
+IPN-38,Report export to PDF generates corrupted files (Key: IPN-38),"Reports exported to PDF cannot be opened.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-38
+Summary: Report export to PDF generates corrupted files"
+IPN-39,Payment gateway fails when user retries transaction twice (Key: IPN-39),"Payment gateway throws error on repeated attempts.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-39
+Summary: Payment gateway fails when user retries transaction twice"
+IPN-40,Shopping cart items disappear after page refresh or reload (Key: IPN-40),"Items in cart vanish on refreshing the page.
+
+--- Unique Key Data ---
+JIRA Key: IPN-40
+Summary: Shopping cart items disappear after page refresh or reload"
+IPN-41,Unable to login after password reset attempt (Key: IPN-41),"User reports they cannot access the system after password reset.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-41
+Summary: Unable to login after password reset attempt"
+IPN-42,User cannot login due to session timeout issue on multiple browsers (Key: IPN-42),"System immediately logs out the user after login.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+Technical details: Log analysis indicates possible race conditions or database deadlocks, which might explain why the system behaves differently under varying load conditions. Developers suspect unoptimized queries are at fault.
+
+Temporary workaround: Clearing the browser cache or using a different browser sometimes helps, but this is not a sustainable solution and cannot be advised officially to end users.
+
+Additional observations: Users have reported inconsistent behavior where the error sometimes resolves on its own after multiple retries. However, this is not reliable and has caused significant frustration among end users.
+
+Business impact: This issue affects revenue as users are unable to complete transactions. Several complaints have already been raised by enterprise customers, putting the client relationship at risk."
+IPN-43,UI alignment issue with login button on homepage for small screens (Key: IPN-43),"Login button overlaps with other elements on mobile view.
+
+--- Unique Key Data ---
+JIRA Key: IPN-43
+Summary: UI alignment issue with login button on homepage for small screens"
+IPN-44,Password reset email not received by users across regions (Key: IPN-44),"Email delivery seems broken for password reset feature.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-44
+Summary: Password reset email not received by users across regions"
+IPN-45,Server returns error 500 when user tries login after inactivity (Key: IPN-45),"Server shows 500 error under specific login conditions.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-45
+Summary: Server returns error 500 when user tries login after inactivity"
+IPN-46,Dashboard loads extremely slowly after login on production (Key: IPN-46),"Dashboard taking too long to load data.
+
+--- Unique Key Data ---
+JIRA Key: IPN-46
+Summary: Dashboard loads extremely slowly after login on production"
+IPN-47,Profile update fails silently without any error message (Key: IPN-47),"User profile changes are not saved after update attempt.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-47
+Summary: Profile update fails silently without any error message"
+IPN-48,New user signup fails with validation errors not displayed (Key: IPN-48),"Signup blocked due to frontend validation errors.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-48
+Summary: New user signup fails with validation errors not displayed"
+IPN-49,Session timeout happens too quickly leading to user frustration (Key: IPN-49),User sessions end within a minute of login.
+IPN-50,Mobile app crashes on opening the settings page consistently (Key: IPN-50),"App closes unexpectedly when navigating to settings.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-50
+Summary: Mobile app crashes on opening the settings page consistently"
+IPN-51,Search functionality returns empty results even for valid queries (Key: IPN-51),"Search box not returning any results despite valid input.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-51
+Summary: Search functionality returns empty results even for valid queries"
+IPN-52,Push notifications not received on Android devices after update (Key: IPN-52),"Notifications stopped working after mobile app update.
+
+--- Unique Key Data ---
+JIRA Key: IPN-52
+Summary: Push notifications not received on Android devices after update"
+IPN-53,Dark mode rendering broken on analytics and reports screen (Key: IPN-53),"Dark mode UI broken for graphs and tables.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-53
+Summary: Dark mode rendering broken on analytics and reports screen"
+IPN-54,Confirmation email not being sent after user registration (Key: IPN-54),"No confirmation email is sent post signup process.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-54
+Summary: Confirmation email not being sent after user registration"
+IPN-55,Permissions error allows non-admins to access restricted panel (Key: IPN-55),"Admin panel is accessible to non-admin users.
+
+--- Unique Key Data ---
+JIRA Key: IPN-55
+Summary: Permissions error allows non-admins to access restricted panel"
+IPN-56,User data not syncing across devices after background refresh (Key: IPN-56),"Data is not syncing across user devices as expected.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-56
+Summary: User data not syncing across devices after background refresh"
+IPN-57,Profile picture upload error intermittently failing (Key: IPN-57),"Profile picture upload frequently fails.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-57
+Summary: Profile picture upload error intermittently failing"
+IPN-58,Report export to PDF generates corrupted files (Key: IPN-58),"Reports exported to PDF cannot be opened.
+
+Business impact: This issue affects revenue as users are unable to complete transactions. Several complaints have already been raised by enterprise customers, putting the client relationship at risk.
+
+Technical details: Log analysis indicates possible race conditions or database deadlocks, which might explain why the system behaves differently under varying load conditions. Developers suspect unoptimized queries are at fault.
+
+Temporary workaround: Clearing the browser cache or using a different browser sometimes helps, but this is not a sustainable solution and cannot be advised officially to end users.
+
+Additional observations: Users have reported inconsistent behavior where the error sometimes resolves on its own after multiple retries. However, this is not reliable and has caused significant frustration among end users."
+IPN-59,Payment gateway fails when user retries transaction twice (Key: IPN-59),"Payment gateway throws error on repeated attempts.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-59
+Summary: Payment gateway fails when user retries transaction twice"
+IPN-60,Shopping cart items disappear after page refresh or reload (Key: IPN-60),"Items in cart vanish on refreshing the page.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-60
+Summary: Shopping cart items disappear after page refresh or reload"
+IPN-61,Unable to login after password reset attempt (Key: IPN-61),"User reports they cannot access the system after password reset.
+
+--- Unique Key Data ---
+JIRA Key: IPN-61
+Summary: Unable to login after password reset attempt"
+IPN-62,User cannot login due to session timeout issue on multiple browsers (Key: IPN-62),"System immediately logs out the user after login.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-62
+Summary: User cannot login due to session timeout issue on multiple browsers"
+IPN-63,UI alignment issue with login button on homepage for small screens (Key: IPN-63),"Login button overlaps with other elements on mobile view.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-63
+Summary: UI alignment issue with login button on homepage for small screens"
+IPN-64,Password reset email not received by users across regions (Key: IPN-64),"Email delivery seems broken for password reset feature.
+
+Business impact: This issue affects revenue as users are unable to complete transactions. Several complaints have already been raised by enterprise customers, putting the client relationship at risk.
+
+Temporary workaround: Clearing the browser cache or using a different browser sometimes helps, but this is not a sustainable solution and cannot be advised officially to end users."
+IPN-65,Server returns error 500 when user tries login after inactivity (Key: IPN-65),"Server shows 500 error under specific login conditions.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-65
+Summary: Server returns error 500 when user tries login after inactivity"
+IPN-66,Dashboard loads extremely slowly after login on production (Key: IPN-66),"Dashboard taking too long to load data.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+Additional observations: Users have reported inconsistent behavior where the error sometimes resolves on its own after multiple retries. However, this is not reliable and has caused significant frustration among end users.
+
+Technical details: Log analysis indicates possible race conditions or database deadlocks, which might explain why the system behaves differently under varying load conditions. Developers suspect unoptimized queries are at fault.
+
+Business impact: This issue affects revenue as users are unable to complete transactions. Several complaints have already been raised by enterprise customers, putting the client relationship at risk."
+IPN-67,Profile update fails silently without any error message (Key: IPN-67),User profile changes are not saved after update attempt.
+IPN-68,New user signup fails with validation errors not displayed (Key: IPN-68),"Signup blocked due to frontend validation errors.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-68
+Summary: New user signup fails with validation errors not displayed"
+IPN-69,Session timeout happens too quickly leading to user frustration (Key: IPN-69),"User sessions end within a minute of login.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-69
+Summary: Session timeout happens too quickly leading to user frustration"
+IPN-70,Mobile app crashes on opening the settings page consistently (Key: IPN-70),"App closes unexpectedly when navigating to settings.
+
+--- Unique Key Data ---
+JIRA Key: IPN-70
+Summary: Mobile app crashes on opening the settings page consistently"
+IPN-71,Search functionality returns empty results even for valid queries (Key: IPN-71),"Search box not returning any results despite valid input.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-71
+Summary: Search functionality returns empty results even for valid queries"
+IPN-72,Push notifications not received on Android devices after update (Key: IPN-72),"Notifications stopped working after mobile app update.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-72
+Summary: Push notifications not received on Android devices after update"
+IPN-73,Dark mode rendering broken on analytics and reports screen (Key: IPN-73),"Dark mode UI broken for graphs and tables.
+
+--- Unique Key Data ---
+JIRA Key: IPN-73
+Summary: Dark mode rendering broken on analytics and reports screen"
+IPN-74,Confirmation email not being sent after user registration (Key: IPN-74),"No confirmation email is sent post signup process.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-74
+Summary: Confirmation email not being sent after user registration"
+IPN-75,Permissions error allows non-admins to access restricted panel (Key: IPN-75),"Admin panel is accessible to non-admin users.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-75
+Summary: Permissions error allows non-admins to access restricted panel"
+IPN-76,User data not syncing across devices after background refresh (Key: IPN-76),"Data is not syncing across user devices as expected.
+
+--- Unique Key Data ---
+JIRA Key: IPN-76
+Summary: User data not syncing across devices after background refresh"
+IPN-77,Profile picture upload error intermittently failing (Key: IPN-77),"Profile picture upload frequently fails.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-77
+Summary: Profile picture upload error intermittently failing"
+IPN-78,Report export to PDF generates corrupted files (Key: IPN-78),"Reports exported to PDF cannot be opened.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-78
+Summary: Report export to PDF generates corrupted files"
+IPN-79,Payment gateway fails when user retries transaction twice (Key: IPN-79),"Payment gateway throws error on repeated attempts.
+
+--- Unique Key Data ---
+JIRA Key: IPN-79
+Summary: Payment gateway fails when user retries transaction twice"
+IPN-80,Shopping cart items disappear after page refresh or reload (Key: IPN-80),"Items in cart vanish on refreshing the page.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-80
+Summary: Shopping cart items disappear after page refresh or reload"
+IPN-81,Unable to login after password reset attempt (Key: IPN-81),"User reports they cannot access the system after password reset.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-81
+Summary: Unable to login after password reset attempt"
+IPN-82,User cannot login due to session timeout issue on multiple browsers (Key: IPN-82),"System immediately logs out the user after login.
+
+--- Unique Key Data ---
+JIRA Key: IPN-82
+Summary: User cannot login due to session timeout issue on multiple browsers"
+IPN-83,UI alignment issue with login button on homepage for small screens (Key: IPN-83),"Login button overlaps with other elements on mobile view.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+Additional observations: Users have reported inconsistent behavior where the error sometimes resolves on its own after multiple retries. However, this is not reliable and has caused significant frustration among end users.
+
+Business impact: This issue affects revenue as users are unable to complete transactions. Several complaints have already been raised by enterprise customers, putting the client relationship at risk.
+
+Temporary workaround: Clearing the browser cache or using a different browser sometimes helps, but this is not a sustainable solution and cannot be advised officially to end users."
+IPN-84,Password reset email not received by users across regions (Key: IPN-84),"Email delivery seems broken for password reset feature.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+Business impact: This issue affects revenue as users are unable to complete transactions. Several complaints have already been raised by enterprise customers, putting the client relationship at risk.
+
+Additional observations: Users have reported inconsistent behavior where the error sometimes resolves on its own after multiple retries. However, this is not reliable and has caused significant frustration among end users.
+
+Temporary workaround: Clearing the browser cache or using a different browser sometimes helps, but this is not a sustainable solution and cannot be advised officially to end users.
+
+Technical details: Log analysis indicates possible race conditions or database deadlocks, which might explain why the system behaves differently under varying load conditions. Developers suspect unoptimized queries are at fault."
+IPN-85,Server returns error 500 when user tries login after inactivity (Key: IPN-85),"Server shows 500 error under specific login conditions.
+
+--- Unique Key Data ---
+JIRA Key: IPN-85
+Summary: Server returns error 500 when user tries login after inactivity"
+IPN-86,Dashboard loads extremely slowly after login on production (Key: IPN-86),"Dashboard taking too long to load data.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-86
+Summary: Dashboard loads extremely slowly after login on production"
+IPN-87,Profile update fails silently without any error message (Key: IPN-87),"User profile changes are not saved after update attempt.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-87
+Summary: Profile update fails silently without any error message"
+IPN-88,New user signup fails with validation errors not displayed (Key: IPN-88),Signup blocked due to frontend validation errors.
+IPN-89,Session timeout happens too quickly leading to user frustration (Key: IPN-89),"User sessions end within a minute of login.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-89
+Summary: Session timeout happens too quickly leading to user frustration"
+IPN-90,Mobile app crashes on opening the settings page consistently (Key: IPN-90),"App closes unexpectedly when navigating to settings.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-90
+Summary: Mobile app crashes on opening the settings page consistently"
+IPN-91,Search functionality returns empty results even for valid queries (Key: IPN-91),"Search box not returning any results despite valid input.
+
+--- Unique Key Data ---
+JIRA Key: IPN-91
+Summary: Search functionality returns empty results even for valid queries"
+IPN-92,Push notifications not received on Android devices after update (Key: IPN-92),"Notifications stopped working after mobile app update.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-92
+Summary: Push notifications not received on Android devices after update"
+IPN-93,Dark mode rendering broken on analytics and reports screen (Key: IPN-93),"Dark mode UI broken for graphs and tables.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-93
+Summary: Dark mode rendering broken on analytics and reports screen"
+IPN-94,Confirmation email not being sent after user registration (Key: IPN-94),No confirmation email is sent post signup process.
+IPN-95,Permissions error allows non-admins to access restricted panel (Key: IPN-95),"Admin panel is accessible to non-admin users.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-95
+Summary: Permissions error allows non-admins to access restricted panel"
+IPN-96,User data not syncing across devices after background refresh (Key: IPN-96),"Data is not syncing across user devices as expected.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-96
+Summary: User data not syncing across devices after background refresh"
+IPN-97,Profile picture upload error intermittently failing (Key: IPN-97),"Profile picture upload frequently fails.
+
+Temporary workaround: Clearing the browser cache or using a different browser sometimes helps, but this is not a sustainable solution and cannot be advised officially to end users.
+
+Technical details: Log analysis indicates possible race conditions or database deadlocks, which might explain why the system behaves differently under varying load conditions. Developers suspect unoptimized queries are at fault."
+IPN-98,Report export to PDF generates corrupted files (Key: IPN-98),"Reports exported to PDF cannot be opened.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-98
+Summary: Report export to PDF generates corrupted files"
+IPN-99,Payment gateway fails when user retries transaction twice (Key: IPN-99),"Payment gateway throws error on repeated attempts.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-99
+Summary: Payment gateway fails when user retries transaction twice"
+IPN-100,Shopping cart items disappear after page refresh or reload (Key: IPN-100),"Items in cart vanish on refreshing the page.
+
+--- Unique Key Data ---
+JIRA Key: IPN-100
+Summary: Shopping cart items disappear after page refresh or reload"
+IPN-101,Unable to login after password reset attempt (Key: IPN-101),"User reports they cannot access the system after password reset.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-101
+Summary: Unable to login after password reset attempt"
+IPN-102,User cannot login due to session timeout issue on multiple browsers (Key: IPN-102),"System immediately logs out the user after login.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-102
+Summary: User cannot login due to session timeout issue on multiple browsers"
+IPN-103,UI alignment issue with login button on homepage for small screens (Key: IPN-103),"Login button overlaps with other elements on mobile view.
+
+--- Unique Key Data ---
+JIRA Key: IPN-103
+Summary: UI alignment issue with login button on homepage for small screens"
+IPN-104,Password reset email not received by users across regions (Key: IPN-104),"Email delivery seems broken for password reset feature.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-104
+Summary: Password reset email not received by users across regions"
+IPN-105,Server returns error 500 when user tries login after inactivity (Key: IPN-105),"Server shows 500 error under specific login conditions.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-105
+Summary: Server returns error 500 when user tries login after inactivity"
+IPN-106,Dashboard loads extremely slowly after login on production (Key: IPN-106),"Dashboard taking too long to load data.
+
+--- Unique Key Data ---
+JIRA Key: IPN-106
+Summary: Dashboard loads extremely slowly after login on production"
+IPN-107,Profile update fails silently without any error message (Key: IPN-107),"User profile changes are not saved after update attempt.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-107
+Summary: Profile update fails silently without any error message"
+IPN-108,New user signup fails with validation errors not displayed (Key: IPN-108),"Signup blocked due to frontend validation errors.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+Temporary workaround: Clearing the browser cache or using a different browser sometimes helps, but this is not a sustainable solution and cannot be advised officially to end users.
+
+Technical details: Log analysis indicates possible race conditions or database deadlocks, which might explain why the system behaves differently under varying load conditions. Developers suspect unoptimized queries are at fault.
+
+Business impact: This issue affects revenue as users are unable to complete transactions. Several complaints have already been raised by enterprise customers, putting the client relationship at risk."
+IPN-109,Session timeout happens too quickly leading to user frustration (Key: IPN-109),"User sessions end within a minute of login.
+
+Technical details: Log analysis indicates possible race conditions or database deadlocks, which might explain why the system behaves differently under varying load conditions. Developers suspect unoptimized queries are at fault.
+
+Additional observations: Users have reported inconsistent behavior where the error sometimes resolves on its own after multiple retries. However, this is not reliable and has caused significant frustration among end users.
+
+Temporary workaround: Clearing the browser cache or using a different browser sometimes helps, but this is not a sustainable solution and cannot be advised officially to end users.
+
+Business impact: This issue affects revenue as users are unable to complete transactions. Several complaints have already been raised by enterprise customers, putting the client relationship at risk."
+IPN-110,Mobile app crashes on opening the settings page consistently (Key: IPN-110),"App closes unexpectedly when navigating to settings.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-110
+Summary: Mobile app crashes on opening the settings page consistently"
+IPN-111,Search functionality returns empty results even for valid queries (Key: IPN-111),"Search box not returning any results despite valid input.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-111
+Summary: Search functionality returns empty results even for valid queries"
+IPN-112,Push notifications not received on Android devices after update (Key: IPN-112),"Notifications stopped working after mobile app update.
+
+--- Unique Key Data ---
+JIRA Key: IPN-112
+Summary: Push notifications not received on Android devices after update"
+IPN-113,Dark mode rendering broken on analytics and reports screen (Key: IPN-113),"Dark mode UI broken for graphs and tables.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-113
+Summary: Dark mode rendering broken on analytics and reports screen"
+IPN-114,Confirmation email not being sent after user registration (Key: IPN-114),"No confirmation email is sent post signup process.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-114
+Summary: Confirmation email not being sent after user registration"
+IPN-115,Permissions error allows non-admins to access restricted panel (Key: IPN-115),"Admin panel is accessible to non-admin users.
+
+--- Unique Key Data ---
+JIRA Key: IPN-115
+Summary: Permissions error allows non-admins to access restricted panel"
+IPN-116,User data not syncing across devices after background refresh (Key: IPN-116),"Data is not syncing across user devices as expected.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-116
+Summary: User data not syncing across devices after background refresh"
+IPN-117,Profile picture upload error intermittently failing (Key: IPN-117),"Profile picture upload frequently fails.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-117
+Summary: Profile picture upload error intermittently failing"
+IPN-118,Report export to PDF generates corrupted files (Key: IPN-118),Reports exported to PDF cannot be opened.
+IPN-119,Payment gateway fails when user retries transaction twice (Key: IPN-119),"Payment gateway throws error on repeated attempts.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-119
+Summary: Payment gateway fails when user retries transaction twice"
+IPN-120,Shopping cart items disappear after page refresh or reload (Key: IPN-120),"Items in cart vanish on refreshing the page.
+
+Steps to reproduce:
+1. Go to the application.
+2. Attempt the operation (e.g., login, password reset, report generation).
+3. Observe the issue as described.
+
+Expected behavior:
+- The system should work normally without errors.
+
+Actual behavior:
+- The system fails with the described issue.
+
+Impact:
+- This affects multiple users in production, blocking critical functionality.
+- Needs urgent investigation and fix.
+
+--- Unique Key Data ---
+JIRA Key: IPN-120
+Summary: Shopping cart items disappear after page refresh or reload"
