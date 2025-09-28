@@ -54,7 +54,7 @@ python demo.py
 
 #### 2. Usage with Optional Arguments
 
-You can bypass the interactive prompt and customize the filtering steps using the following optional arguments defined in **run_demo.py**:
+You can bypass the interactive prompt and customize the filtering steps using the following optional arguments defined in `run_demo.py`:
 
 | Argument | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
@@ -65,3 +65,21 @@ You can bypass the interactive prompt and customize the filtering steps using th
 
 **Example**: Run a non-interactive search on the ticket at index 50, pre-filter to 20 candidates, and show the final top 3 matches:
 
+```bash
+python run_demo.py --tickets_file tickets.csv --query_index 50 --top_k 20 --final_n_filter 3
+```
+---
+## 🏗️ Actual Project Architecture (Production Use Case) 
+
+This demo is based on a planned production system designed for real-time user assistance. 
+| Component | Technology/Trigger | Function | 
+| :--- | :--- | :--- | 
+| **Data Ingestion** | Cron Job (Daily) | Queries the JIRA API for all tickets and saves data to a secure database/storage for retrieval. | 
+| **Trigger** | JIRA Webhook | JIRA sends an HTTP POST request to our system **immediately** upon a ticket being assigned to a user. The payload includes the new issue key, user name, and **user email**. | 
+| **Matching Engine** | Core Logic (This Demo) | Executes the two-stage similarity process (TF-IDF + Semantic AI) on the new ticket against the entire historical dataset. | 
+| **User Notification** | Email Service (e.g., SendGrid) | Automatically sends an email to the assigned user (using the email from the webhook) with the list of N most matching tickets for reference. |
+
+### Why the Two-Stage Approach? 
+1. **TF-IDF Pre-filter:** Dramatically reduces the number of tickets that need heavy AI processing, **saving time and computational cost** when dealing with thousands of tickets. 
+2. **Semantic Similarity:** Ensures the matches are based on the **meaning and intent** of the ticket, not just keyword overlap, providing much higher relevance. 
+---
